@@ -1,0 +1,61 @@
+DOCUMENTATION ON GIT AND GITHUB WORKFLOW:
+Here's a step-by-step guide to creating a text file in your GitHub repository using developer’s tools such as Git Bash and Visual Studio Code (VS Code):
+Prerequisites:
+- Git is installed on my system.
+- VS Code is installed on my system.
+- I have a GitHub account.
+
+Steps:
+
+1. Create a repository
+I navigated to my profile on my GitHub account, clicked on “your repositories” and created a new repository called “PLPBasicGitAssignment”
+
+Clone the Repository:
+-Copy the HTTPS code of your repo  
+ - Open Git Bash.
+- I navigated to the directory where I wanted to clone my repository:
+     
+     cd c:/
+   
+   - Clone  GitHub repository:
+   Next step, I typed in the command,
+     git clone https://github.com/your-username/your-repository.git
+
+   - Navigated into my repository directory:
+     cd ‘PLPBasicGitAssignment.git’
+
+Next Command was,
+Code .
+
+ (Which led me to my Vscode)
+
+2. I opened the Repository in VS Code:
+   - Open VS Code.
+   - Open the cloned repository folder in VS Code by selecting `File > Open Folder` and navigating to the repository directory.
+
+3. Create a New Text File:
+   - In VS Code, click on the `New File` icon or right-click in the file explorer and select `New File`.
+   - I named the file `hello.txt` 
+
+4. Editing the Text File:
+   - I opened the newly created text file and add some content to it.
+“Hello, Git!”
+   - Then I went ahead to save the file.
+
+
+5. Stage the Changes:
+   Open a new terminal using Git bash and stage the new file
+     git add hello.txt
+
+6. Commit the Change:
+   - I went ahead to commit the changes with a descriptive message:
+     git commit -m "Add hello.txt with a greet”
+
+7. Push the Changes to GitHub:
+   - I pushed the changes to the remote repository:
+     git push -u origin main
+
+To verify if the change reflects on my GitHub account, I had to go back to my account:
+- Go to your GitHub repository in a web browser.
+- Navigate to the branch you pushed to
+- You should see the new `hello.txt` file with your content.
